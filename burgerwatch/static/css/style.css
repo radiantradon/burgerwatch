@@ -36,14 +36,10 @@ html, body, #map-canvas {
 h1 {
 	font-family: 'Anton', sans-serif;
 	font-size:2.5em;
-    /*text-shadow: 2px 2px 2px #CCC; */
 	color: #6a4600;
 	text-align: center;
 	width:100%;
 }
-
-
-
 
 input {
 	margin-bottom:5px;
