@@ -18,7 +18,7 @@ def get_all_trucks():
     json_data.pop('meta')
     return jsonify(**json_data)
 
-@app.route('/filtertrucks', methods=['GET', 'POST'])
+@app.route('/filtertrucks')
 def filter_trucks():
     filtered = []
     # Get URL args here
@@ -41,10 +41,6 @@ def filter_trucks():
         data=filtered
     )
     return jsonify(**data)
-
-@app.route('/trucks/<type>')
-def search_by_food_type():
-    pass
 
 def open_json():
     filepath = os.path.join(app.root_path, 'data/foodtruckdata.json')
