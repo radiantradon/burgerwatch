@@ -9,7 +9,8 @@ app.config.update(dict(
     DEBUG=True,
     SECRET_KEY='development key',
     USERNAME='admin',
-    PASSWORD='default'
+    PASSWORD='default',
+    GMAPS_API_KEY='AIzaSyB99_r-84VyVficwEHNY4-Zgpsf9XxAHB0',
 ))
 app.config.from_envvar('BW_SETTINGS', silent=True)
 

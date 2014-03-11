@@ -1,5 +1,50 @@
 html, body, #map-canvas {
     height: 100%;
     margin: 0px;
-    padding: 0px
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#map-canvas {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left:0;
+}
+
+#side-panel {
+	z-index:1000;
+	width: 250px;
+	position:absolute;
+	right:10px;
+	top:30px;
+	background-color: #6a4600;
+	border-radius:10px;
+	-moz-border-radius:10px;
+}
+
+#inner-side-panel {
+	margin: 4px;
+	border: 1px solid #CCC;
+	padding:10px;
+	border-radius:9px;
+	-moz-border-radius: 9px;
+	background-color: #F9D88E;
+}
+
+h1 {
+	font-family: 'Anton', sans-serif;
+	font-size:2.5em;
+    /*text-shadow: 2px 2px 2px #CCC; */
+	color: #6a4600;
+	text-align: center;
+	width:100%;
+}
+
+
+
+
+input {
+	margin-bottom:5px;
 }

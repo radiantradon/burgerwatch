@@ -1,19 +1,45 @@
 <!DOCTYPE html>
+<!-- index.html all written by KE -->
 <html>
   <head>
-    <title>Food truck Map</title>
+    <title>Burgerwatch!</title>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+   <link href='http://fonts.googleapis.com/css?family=Cherry+Cream+Soda|Anton|Open+Sans:800|Roboto:400,400italic,700' rel='stylesheet' type='text/css'>
+
     <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}" type="text/css">
+
 
     <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore-min.js" type="text/javascript"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.2/backbone-min.js" type="text/javascript"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&API_KEY=AIzaSyB99_r-84VyVficwEHNY4-Zgpsf9XxAHB0&sensor=false"></script>
+    <script src="{{url_for('static', filename='js/truck_backbone.js')}}"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&API_KEY={{api_key}}&sensor=false"></script>
     <script src="{{url_for('static', filename='js/maps.js')}}"></script>
+    <script src="{{url_for('static', filename='js/trucks.js')}}"></script>
 
   </head>
   <body>
-    <div id="map-canvas"></div>
+      <div id="map-canvas"></div>
+      <div id="side-panel">
+        <div id="inner-side-panel">
+          <h1>burgerwatch!</h1>
+          <p>A map of San Francisco food trucks, sourced from <a href="https://data.sfgov.org/Permitting/Mobile-Food-Facility-Permit/rqzj-sfat">data.sfgov.org</a>.</p>
+          <p>Search for a particular cuisine, push cart, or catering business</p>
+          <form>
+            <label for="truck_name">Truck name:</label><br>
+            <input type="text" name="truck_name">
+            <br>
+            <label for="filter_by_food_item">Food item:</label><br>
+            <input type="text" name="filter_by_food_item">
+            <br>
+            <input type="checkbox" name="exclude_catering" value="true"></input>
+            <label for="exclude_catering">Exclude catering companies</label>
+          </form>
+          <button type="button" class="btn btn-success">Search!</button>
+
+        </div>
+      </div>
   </body>
 </html>
