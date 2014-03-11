@@ -3,7 +3,7 @@ burgerwatch
 
 Burgerwatch!
 
-Hosted at [http://stark-escarpment-8958.herokuapp.com/].
+Hosted at http://stark-escarpment-8958.herokuapp.com/
 
 The application is intended to show the location of food trucks in San Francisco on a map. The data is sourced from permit data published [here](https://data.sfgov.org/Permitting/Mobile-Food-Facility-Permit/rqzj-sfat).
 
