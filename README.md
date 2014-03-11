@@ -20,5 +20,6 @@ API endpoints:
 
 The frontend just consists of maps.js loading in markers from JSON, with a couple of callbacks attached to event handlers. All marker-loading is done through AJAX, no page-reloading is ever necessary. I saw that there were many duplicate food truck markers so I decided to highlight all of the food trucks of the same business name when one was selected.
 
+You can see another code project that makes words out of a set of letters, code here: [https://github.com/radiantradon/bananagram] and hosted here [http://secure-mountain-8277.herokuapp.com/]. My personal website is at [http://radiantradon.com].
 
 
