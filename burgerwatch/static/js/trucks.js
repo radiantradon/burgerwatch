@@ -9,4 +9,7 @@ $(function() {
     var url = "/filtertrucks?"+serialized;
     loadTruckMarkers(map, url);
   });
+
+  // Test to see if we're on a phone
+  
 });
